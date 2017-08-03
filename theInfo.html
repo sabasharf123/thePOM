@@ -5,116 +5,152 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
 <style>
 body,h1,h2{font-family: "Raleway", sans-serif}
 body, html {height: 100%}
 p {line-height: 2}
-.bgimg, .bgimg2 {
-    min-height: 100%;
+
+.bgimg {
+    background-image: url("green2.jpg");
+    min-height: 75%;
+    background-attachment: fixed;
     background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
-}
-.bgimg {background-image: url("/w3images/wedding_couple.jpg")}
-.bgimg2 {background-image: url("/w3images/flowers.jpg")}
+    }
+
 </style>
 <body>
-
+<!--what do .whatever mean again-->
 <!-- Header / Home-->
-<header class="w3-display-container w3-wide bgimg w3-grayscale-min" id="home">
+
+<!--<header class="w3-display-container w3-wide bgimg
+" id="home">
   <div class="w3-display-middle w3-text-white w3-center">
-    <h1 class="w3-jumbo">Jane & John</h1>
-    <h2>Are getting married</h2>
-    <h2><b>17.07.2017</b></h2>
+    <h1 class="w3-jumbo">thePOM</h1>
   </div>
-</header>
+</header>-->
 
 <!-- Navbar (sticky bottom) -->
-<div class="w3-bottom w3-hide-small">
-  <div class="w3-bar w3-white w3-center w3-padding w3-opacity-min w3-hover-opacity-off">
-    <a href="#home" style="width:25%" class="w3-bar-item w3-button">Home</a>
-    <a href="#us" style="width:25%" class="w3-bar-item w3-button">Jane & John</a>
-    <a href="#wedding" style="width:25%" class="w3-bar-item w3-button">Wedding</a>
-    <a href="#rsvp" style="width:25%" class="w3-bar-item w3-button w3-hover-black">RSVP</a>
+<div class="w3-top w3-hide-small">
+  <div class="w3-bar w3-yellow w3-center w3-padding w3-opacity-min w3-hover-opacity-off w3-animate-zoom">
+    <a href="homepage.html" style="width:25%" class="w3-bar-item w3-button">theHOME</a>
+    <a href="theInfo.html" style="width:25%" class="w3-bar-item w3-button">theINFO</a>
+    <a href="destress.html" style="width:25%" class="w3-bar-item w3-button">theDESTRESS</a>
+    <a href="Sources.html" style="width:25%" class="w3-bar-item w3-button">theSOURCES</a>
   </div>
 </div>
 
+<!--how do we get those links to work on other laptops??-->
 <!-- About / Jane And John -->
-<div class="w3-container w3-padding-64 w3-pale-red w3-grayscale-min" id="us">
-  <div class="w3-content">
-    <h1 class="w3-center w3-text-grey"><b>Jane & John</b></h1>
-    <img class="w3-round w3-grayscale-min" src="/w3images/wedding_couple2.jpg" style="width:100%;margin:32px 0">
-    <p><i>You all know us. And we all know you. We are getting married lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
-      occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-      laboris nisi ut aliquip ex ea commodo consequat.</i>
-    </p><br>
-    <p class="w3-center"><a href="#wedding" class="w3-button w3-black w3-round w3-padding-large w3-large">Wedding Details</a></p>
+
+<header class="bgimg w3-display-container">
+
+ <!-- <div class="w3-display-middle w3-display-bottomright w3-padding-large w3-hide-small">
+    <span class="w3-tag">Peace of Mind</span>
   </div>
+-->
+
+  <div class="w3-display-middle w3-padding-large w3-border w3-wide w3-text-grey w3-center">
+    <h1 class="w3-hide-medium w3-hide-small w3-xxxlarge w3-animate-zoom">theInfo</h1>
+    <h5 class="w3-hide-large w3-animate-zoom style="white-space:nowrap"">theInfo</h5>
+    <h3 class="w3-hide-medium w3-hide-small w3-animate-zoom">Know when and how to reach out </h3>
+   <!--
+     <span class="w3-text-pink" style="font-size:90px">thePOM<br>Peace of Mind</span>
+    -->
+  </div>
+
+  <div class="w3-display-bottommiddle w3-center w3-padding-large">
+    <span class="w3-text-grey" style="font-size:25px">“You can’t stand in your corner of the forest, waiting for others to come to you. You have to go to them sometimes.”-Winnie the Pooh
+</span>
+  </div>
+
+</header>
+
+
+<!--
+ <script>
+    var myIndex = 0;
+    carousel();
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("Scenicpics");
+        for (i = 0; i < x.length; i++) {
+           x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}
+        x[myIndex-1].style.display = "block";
+        setTimeout(carousel, 2000); // Change image every 2 seconds
+    }
+  </script>-->
+
+
+  </div>
+</div>
 </div>
 
 <!-- Background photo -->
-<div class="w3-display-container bgimg2">
-  <div class="w3-display-middle w3-text-white w3-center">
-    <h1 class="w3-jumbo">You Are Invited</h1><br>
-    <h2>Of course..</h2>
+<div class="w3-container w3-padding-64 w3-pale-red w3-grayscale-min w3-center" id="wedding">
+  <div class="w3-content">
+    <h1 class="w3-text-grey"><b>ourMAP</b></h1>
   </div>
 </div>
+
 
 <!-- Wedding information -->
 <div class="w3-container w3-padding-64 w3-pale-red w3-grayscale-min w3-center" id="wedding">
   <div class="w3-content">
-    <h1 class="w3-text-grey"><b>THE WEDDING</b></h1>
-    <img class="w3-round-large w3-grayscale-min" src="/w3images/wedding_location.jpg" style="width:100%;margin:64px 0">
+    <h1 class="w3-text-grey"><b>theSTATS</b></h1>
+    <div class="pie-wrapper" style="margin:50px 0 10px;"><div class="pie-column col-md-3">
+    	<span class="chart" data-percent="95" data-easing="easeOutExpo" data-animate="2000" data-line-cap="square" data-line-width="10" data-track-color="#ecf0f1" data-bar-color="#3498db" style="width:150px;height:150px">
+    					<span class="percent-chart" style="line-height:150px;">95</span><canvas height="150" width="150"></canvas></span>
+    					<div class="pie-content">
+    					</div>
+    			</div><div class="pie-column col-md-3">
+    	<span class="chart" data-percent="80" data-easing="easeOutExpo" data-animate="2000" data-line-cap="square" data-line-width="10" data-track-color="#ecf0f1" data-bar-color="#ffc600" style="width:150px;height:150px">
+    					<span class="percent-chart" style="line-height:150px;">80</span><canvas height="150" width="150"></canvas></span>
+    					<div class="pie-content">
+    					</div>
+    			</div><div class="pie-column col-md-3">
+    	<span class="chart" data-percent="70" data-easing="easeOutExpo" data-animate="2000" data-line-cap="square" data-line-width="10" data-track-color="#ecf0f1" data-bar-color="#e67e22" style="width:150px;height:150px">
+    					<span class="percent-chart" style="line-height:150px;">70</span><canvas height="150" width="150"></canvas></span>
+    					<div class="pie-content">
+    					</div>
+    			</div><div class="pie-column col-md-3">
+    	<span class="chart" data-percent="95" data-easing="easeOutExpo" data-animate="2000" data-line-cap="square" data-line-width="10" data-track-color="#ecf0f1" data-bar-color="#13b0cb" style="width:150px;height:150px">
+    					<span class="percent-chart" style="line-height:150px;">95</span><canvas height="150" width="150"></canvas></span>
+    					<div class="pie-content">
+    					</div>
+    			</div></div>
     <div class="w3-row">
       <div class="w3-half">
-        <h2>When</h2>
-        <p>Wedding Ceremony - 2:00pm</p>
-        <p>Reception & Dinner - 5:00pm</p>
-      </div>
-      <div class="w3-half">
-        <h2>Where</h2>
-        <p>Some place, an address</p>
-        <p>Some where, some address</p>
       </div>
     </div>
   </div>
 </div>
 
 <!-- RSVP section -->
-<div class="w3-container w3-padding-64 w3-pale-red w3-center w3-wide" id="rsvp">
-  <h1>HOPE YOU CAN MAKE IT!</h1>
-  <p class="w3-large">Kindly Respond By January, 2017</p>
-  <p class="w3-xlarge">
-    <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-round w3-red w3-opacity w3-hover-opacity-off" style="padding:8px 60px">RSVP</button>
-  </p>
-</div>
 
-<!-- RSVP modal -->
-<div id="id01" class="w3-modal">
-  <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="padding:32px;max-width:600px">
-    <div class="w3-container w3-white w3-center">
-      <h1 class="w3-wide">CAN YOU COME?</h1>
-      <p>We really hope you can make it.</p>
-      <form>
-        <input class="w3-input w3-border" type="text" placeholder="Name(s)" name="name">
-      </form>
-      <p><i>Sincerely, John & Jane</i></p>
-      <div class="w3-row">
-        <div class="w3-half">
-          <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-block w3-green">Going</button>
-        </div>
-        <div class="w3-half">
-          <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-block w3-red">Can't come</button>
-        </div>
-      </div>
-    </div>
-  </div>
+<div class="w3-container w3-padding-64 w3-pale-red w3-center w3-wide w3-center" id="rsvp"> <!--ID is important for javascript to work-->
+  <div class="w3-content">
+    <h1 class="w3-text-grey"><b>theADVICE</b></h1>
 </div>
+  </div>
+
+
+
+
+
+
 
 <!-- Footer -->
 <footer class="w3-center w3-black w3-padding-16">
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+  <p>Girls Who Code 2017, Bay Area</p>
 </footer>
-<div class="w3-hide-small" style="margin-bottom:32px"> </div>
+<div class="w3-hide-small" style="margin-bottom:32px"> </div>
 
 </body>
 </html>
