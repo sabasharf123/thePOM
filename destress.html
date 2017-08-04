@@ -5,116 +5,307 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
 <style>
 body,h1,h2{font-family: "Raleway", sans-serif}
 body, html {height: 100%}
 p {line-height: 2}
-.bgimg, .bgimg2 {
-    min-height: 100%;
+
+.bgimg {
+    background-image: url("http://eskipaper.com/images/pink-flowers-14.jpg");
+    min-height: 90%;
+    background-attachment: fixed;
     background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
+    }
+
+    /* The Modal (background) */
+    .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        padding-top: 100px; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    }
+
+    /* Modal Content */
+    .modal-content {
+        background-color: #fefefe;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+    }
+
+    /* The Close Button */
+    .close {
+        color: #aaaaaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .modal2 {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        padding-top: 100px; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    }
+
+    /* Modal Content */
+    .modal-content2 {
+        background-color: #fefefe;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+    }
+
+    /* The Close Button */
+    .close2 {
+        color: #aaaaaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .close2:hover,
+    .close2:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .modal3 {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        padding-top: 100px; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    }
+
+    /* Modal Content */
+    .modal-content3 {
+        background-color: #fefefe;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+    }
+
+    /* The Close Button */
+    .close3 {
+        color: #aaaaaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .close3:hover,
+    .close3:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .button {
+      background-repeat:no-repeat;
+      border: none;
+      cursor:pointer;
+      overflow: hidden;
+      outline:none;
+  }
+
+  .nicepicture {
+    border-style: solid;
+    border-color: transparent;
 }
-.bgimg {background-image: url("/w3images/wedding_couple.jpg")}
-.bgimg2 {background-image: url("/w3images/flowers.jpg")}
-</style>
+  </style>
+
 <body>
 
-<!-- Header / Home-->
-<header class="w3-display-container w3-wide bgimg w3-grayscale-min" id="home">
-  <div class="w3-display-middle w3-text-white w3-center">
-    <h1 class="w3-jumbo">Jane & John</h1>
-    <h2>Are getting married</h2>
-    <h2><b>17.07.2017</b></h2>
-  </div>
-</header>
 
 <!-- Navbar (sticky bottom) -->
-<div class="w3-bottom w3-hide-small">
-  <div class="w3-bar w3-white w3-center w3-padding w3-opacity-min w3-hover-opacity-off">
-    <a href="#home" style="width:25%" class="w3-bar-item w3-button">Home</a>
-    <a href="#us" style="width:25%" class="w3-bar-item w3-button">Jane & John</a>
-    <a href="#wedding" style="width:25%" class="w3-bar-item w3-button">Wedding</a>
-    <a href="#rsvp" style="width:25%" class="w3-bar-item w3-button w3-hover-black">RSVP</a>
+<div class="w3-top w3-hide-small">
+  <div class="w3-bar w3-pink w3-center w3-padding w3-opacity-min w3-hover-opacity-off w3-animate-zoom">
+    <a href="homepage.html" style="width:25%" class="w3-bar-item w3-button">theHOME</a>
+    <a href="theInfo.html" style="width:25%" class="w3-bar-item w3-button">theINFO</a>
+    <a href="destress.html" style="width:25%" class="w3-bar-item w3-button">theDESTRESS</a>
+    <a href="Sources.html" style="width:25%" class="w3-bar-item w3-button">theSOURCES</a>
   </div>
 </div>
 
+<!--how do we get those links to work on other laptops??-->
 <!-- About / Jane And John -->
-<div class="w3-container w3-padding-64 w3-pale-red w3-grayscale-min" id="us">
+
+<header class="bgimg w3-display-container">
+
+ <!-- <div class="w3-display-middle w3-display-bottomright w3-padding-large w3-hide-small">
+    <span class="w3-tag">Peace of Mind</span>
+  </div>
+-->
+
+  <div class="w3-display-middle w3-padding-large w3-border w3-wide w3-text-grey w3-center">
+    <h1 class="w3-hide-medium w3-hide-small w3-xxxlarge w3-animate-zoom">theDESTRESS</h1>
+    <h5 class="w3-hide-large w3-animate-zoom style="white-space:nowrap"">theDESTRESS</h5>
+    <h3 class="w3-hide-medium w3-hide-small w3-animate-zoom">only good vibes here</h3>
+   <!--
+     <span class="w3-text-pink" style="font-size:90px">thePOM<br>Peace of Mind</span>
+    -->
+  </div>
+
+  <div class="w3-display-bottommiddle w3-center w3-padding-large">
+    <div class="w3-container w3-center w3-animate-left">
+    <span class="w3-text-white" style="font-size:20px">“Don’t underestimate the value of doing nothing, of just going along, listening to all the things you can’t hear, and not bothering.”
+-Winnie the Pooh</span>
+  <p></p>
+  </div>
+
+</header>
+
+
+  </div>
+</div>
+</div>
+
+<!-- theMEMERY -->
+<div class="w3-container w3-padding-64 w3-pale-red w3-grayscale-min w3-center">
   <div class="w3-content">
-    <h1 class="w3-center w3-text-grey"><b>Jane & John</b></h1>
-    <img class="w3-round w3-grayscale-min" src="/w3images/wedding_couple2.jpg" style="width:100%;margin:32px 0">
+    <h1 class="w3-text-grey"><b>theMEMERY</b></h1>
     <p><i>You all know us. And we all know you. We are getting married lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
       occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
       laboris nisi ut aliquip ex ea commodo consequat.</i>
-    </p><br>
-    <p class="w3-center"><a href="#wedding" class="w3-button w3-black w3-round w3-padding-large w3-large">Wedding Details</a></p>
   </div>
 </div>
 
-<!-- Background photo -->
-<div class="w3-display-container bgimg2">
-  <div class="w3-display-middle w3-text-white w3-center">
-    <h1 class="w3-jumbo">You Are Invited</h1><br>
-    <h2>Of course..</h2>
-  </div>
-</div>
-
-<!-- Wedding information -->
-<div class="w3-container w3-padding-64 w3-pale-red w3-grayscale-min w3-center" id="wedding">
+<!--thePEACE-->
+<div class="w3-container w3-padding-64 w3-pale-red w3-grayscale-min w3-center">
   <div class="w3-content">
-    <h1 class="w3-text-grey"><b>THE WEDDING</b></h1>
-    <img class="w3-round-large w3-grayscale-min" src="/w3images/wedding_location.jpg" style="width:100%;margin:64px 0">
+    <h1 class="w3-text-grey"><b>thePEACE</b></h1>
+      <div class="w3-center">
+      <button id="myBtn"><img class="nicepic" src="aromatherapy.png" ></button>    <!-- Trigger/Open The Modal -->
+      <div id="myModal" class="modal">        <!-- The Modal -->
+        <div class="w3-center modal-content">               <!-- Modal content -->
+          <span class="close">&times;</span>
+            <p>Aromatherapy is the practice of using the natural oils extracted from flowers, bark, stems, leaves, roots or other parts of a plant to enhance psychological and physical well-being.
+The inhaled aroma from these "essential" oils is widely believed to stimulate brain function. Essential oils can also be absorbed through the skin, where they travel through the bloodstream and can promote whole-body healing.</p>
+        </div>
+      </div>
+
+    <script>
+     var modal = document.getElementById('myModal');  // Get the modal
+      var btn = document.getElementById("myBtn");       // Get the button that opens the modal
+      var span = document.getElementsByClassName("close")[0];   // Get the <span> element that closes the modal
+      btn.onclick = function() {                          // When the user clicks the button, open the modal
+          modal.style.display = "block";
+      }
+      span.onclick = function() {
+          modal.style.display = "none";             // When the user clicks on <span> (x), close the modal
+
+      }
+    </script>
+
+    <button  id="myBtn2"><img class="nicepic" src="meditation.png"></button>    <!-- Trigger/Open The Modal -->
+      <div id="myModal2" class="modal2">        <!-- The Modal -->
+        <div class="w3-center modal-content2">               <!-- Modal content -->
+          <span class="close2">&times;</span>
+            <p>Aromatherapyipdeqwhnjferfdnklo</p>
+        </div>
+      </div>
+
+  <script>
+  var m = document.getElementById('myModal2');  // Get the modal
+  var b = document.getElementById("myBtn2");       // Get the button that opens the modal
+  var span = document.getElementsByClassName("close2")[0];   // Get the <span> element that closes the modal
+  b.onclick = function() {                          // When the user clicks the button, open the modal
+      m.style.display = "block";
+  }
+  span.onclick = function() {
+      m.style.display = "none";             // When the user clicks on <span> (x), close the modal
+
+  }
+  </script>
+
+  <button  id="myBtn3"><img class="nicepic" src="yoga.png"></button>    <!-- Trigger/Open The Modal -->
+    <div id="myModal3" class="modal3">        <!-- The Modal -->
+      <div class="w3-center modal-content3">               <!-- Modal content -->
+        <span class="close3">&times;</span>
+          <p>fuck</p>
+      </div>
+    </div>
+
+<script>
+    var m3 = document.getElementById('myModal3');  // Get the modal
+    var b3 = document.getElementById("myBtn3");       // Get the button that opens the modal
+    var span = document.getElementsByClassName("close3")[0];   // Get the <span> element that closes the modal
+    b3.onclick = function() {                          // When the user clicks the button, open the modal
+        m3.style.display = "block";
+    }
+    span.onclick = function() {
+        m3.style.display = "none";             // When the user clicks on <span> (x), close the modal
+
+    }
+</script>
+
+
+
+<!-- theMusic -->
+<div class="w3-container w3-padding-64 w3-pale-red w3-center">
+  <div class="w3-content">
+    <h1 class="w3-text-grey"><b>theMusic</b></h1>
+    <p>Good music for good times</p>
     <div class="w3-row">
-      <div class="w3-half">
-        <h2>When</h2>
-        <p>Wedding Ceremony - 2:00pm</p>
-        <p>Reception & Dinner - 5:00pm</p>
-      </div>
-      <div class="w3-half">
-        <h2>Where</h2>
-        <p>Some place, an address</p>
-        <p>Some where, some address</p>
-      </div>
+        <iframe src="https://open.spotify.com/embed/user/12183611278/playlist/60LkEx71Mm62OBegwOBuTh" width="1000" height="380" frameborder="0" allowtransparency="true"></iframe>”
+      <!--  <p>Interactive map</p>
+        <p>Statistics</p>
+        <p>Advice</p>-->
+
     </div>
   </div>
 </div>
 
 <!-- RSVP section -->
-<div class="w3-container w3-padding-64 w3-pale-red w3-center w3-wide" id="rsvp">
-  <h1>HOPE YOU CAN MAKE IT!</h1>
-  <p class="w3-large">Kindly Respond By January, 2017</p>
-  <p class="w3-xlarge">
-    <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-round w3-red w3-opacity w3-hover-opacity-off" style="padding:8px 60px">RSVP</button>
-  </p>
-</div>
 
-<!-- RSVP modal -->
-<div id="id01" class="w3-modal">
-  <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="padding:32px;max-width:600px">
-    <div class="w3-container w3-white w3-center">
-      <h1 class="w3-wide">CAN YOU COME?</h1>
-      <p>We really hope you can make it.</p>
-      <form>
-        <input class="w3-input w3-border" type="text" placeholder="Name(s)" name="name">
-      </form>
-      <p><i>Sincerely, John & Jane</i></p>
-      <div class="w3-row">
-        <div class="w3-half">
-          <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-block w3-green">Going</button>
-        </div>
-        <div class="w3-half">
-          <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-block w3-red">Can't come</button>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+
+
+
+
+
+
 
 <!-- Footer -->
 <footer class="w3-center w3-black w3-padding-16">
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+  <p>Girls Who Code 2017, Bay Area</p>
 </footer>
-<div class="w3-hide-small" style="margin-bottom:32px"> </div>
+<div class="w3-hide-small" style="margin-bottom:32px"> </div>
 
 </body>
 </html>
