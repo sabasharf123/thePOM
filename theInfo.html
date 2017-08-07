@@ -5,7 +5,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBWhg4S4_tnBZqwi5uIjM_kOEYQpEewzxU&libraries=places&callback=initMap" async defer></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBWhg4S4_tnBZqwi5uIjM_kOEYQpEewzxU&libraries=places&callback=getCity" async defer></script>
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -25,41 +25,31 @@ p {line-height: 2}
     }
 
 
-input[type=text] {
-        width: 130px;
-        box-sizing: border-box;
-        border: 2px solid #ccc;
-        border-radius: 4px;
-        font-size: 16px;
-        background-color: white;
-        background-image: url('search.png');
-        background-position: 10px 10px;
-        background-repeat: no-repeat;
-        padding: 12px 20px 12px 40px;
-        -webkit-transition: width 0.4s ease-in-out;
-        transition: width 0.4s ease-in-out;
-          }
+    input[type=text] {
+             width: 130px;
+             box-sizing: border-box;
+             border: 2px solid #ccc;
+             border-radius: 4px;
+             font-size: 16px;
+             background-color: white;
+             background-image: url('search.png');
+             background-position: 10px 10px;
+             background-repeat: no-repeat;
+             padding: 12px 20px 12px 40px;
+             -webkit-transition: width 0.4s ease-in-out;
+             transition: width 0.4s ease-in-out;
+         }
 
-input[type=text]:focus {
-              width: 100%;
-          }
+         input[type=text]:focus {
+             width: 100%;
+         }
 
-          /* Always set the map height explicitly to define the size of the div
-           * element that contains the map. */
-  </style>
-  <style>
-            /* Always set the map height explicitly to define the size of the div
-             * element that contains the map. */
-             #map {
-              height: 100%;
-            }
-            /* Optional: Makes the sample page fill the window. */
-            html, body {
-              height: 100%;
-              margin: 0;
-              padding: 0;
-            }
-          </style>
+         /* Always set the map height explicitly to define the size of the div
+          * element that contains the map. */
+         #map {
+           height: 75%
+         }
+</style>
 <body>
 <!--what do .whatever mean again-->
 <!-- Header / Home-->
@@ -92,8 +82,8 @@ input[type=text]:focus {
 -->
 
   <div class="w3-display-middle w3-padding-large w3-border w3-wide w3-text-grey w3-center">
-    <h1 class="w3-hide-medium w3-hide-small w3-xxxlarge w3-animate-zoom">theInfo</h1>
-    <h5 class="w3-hide-large w3-animate-zoom style="white-space:nowrap"">theInfo</h5>
+    <h1 class="w3-hide-medium w3-hide-small w3-xxxlarge w3-animate-zoom">theINFO</h1>
+    <h5 class="w3-hide-large w3-animate-zoom style="white-space:nowrap"">theINFO</h5>
     <h3 class="w3-hide-medium w3-hide-small w3-animate-zoom">know when and how to reach out </h3>
    <!--
      <span class="w3-text-pink" style="font-size:90px">thePOM<br>Peace of Mind</span>
@@ -101,8 +91,8 @@ input[type=text]:focus {
   </div>
 
   <div class="w3-display-bottommiddle w3-center w3-padding-large">
-    <div class="w3-container w3-center w3-animate-left">
-    <span class="w3-text-white" style="font-size:20px">“You can’t stand in your corner of the forest, waiting for others to come to you. You have to go to them sometimes.”-Winnie the Pooh
+    <div class="w3-container w3-center w3-animate-zoom">
+    <span class="w3-text-black" style="font-size:20px">“You can’t stand in your corner of the forest, waiting for others to come to you. You have to go to them sometimes.”-Winnie the Pooh
 </span>
   </div>
 
@@ -118,12 +108,13 @@ input[type=text]:focus {
 <!-- Background photo -->
 <div class="w3-container w3-padding-64 w3-pale-yellow w3-center" id="wedding">
   <div class="w3-content">
-    <h1 class="w3-text-grey"><b>ourMAP</b></h1>
+    <h1 class="w3-text-grey"><b>theMAP</b></h1>
   </div>
 </div>
 <input id="search-box" type="text" name="search" placeholder="Search..">
+<img src= "key.jpg" height ="100">
 
-  <div id="map"></div>
+     <div id="map"></div>
 
 
 <!-- Wedding information -->
@@ -156,132 +147,140 @@ input[type=text]:focus {
      // parameter when you first load the API. For example:
      // <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places">
 
-     var map;
-     var infowindow;
-     var myLat;
-     var myLng;;
-     var myLatlng1;
-     var city = '';
-     //city += (prompt("City:"));
-     city += ', us';
+      var map;
+      var infowindow;
+      var myLat;
+      var myLng;;
+      var myLatlng1;
+      var city = 'sunnyvale';
+      var placeEntered;
+      var zoomzoom = 3;
 
-console.log(city);
+      function getCity(){
+        initMap();
+        document.getElementById('search-box').onkeydown = function(event) {
+            if (event.keyCode == 13) {
+              zoomzoom = 15;
+              placeEntered = document.getElementById("search-box").value;
+              console.log(city);
+              city = placeEntered;
+              console.log(city);
+              city += ', us';
+              console.log(city);
+              initMap();
+            }
+        }
+      }
 
 
-     function initMap() {
+      function initMap() {
 
-       var geocoder =  new google.maps.Geocoder();
- geocoder.geocode( { 'address': city}, function(results, status) {
-   if (status == google.maps.GeocoderStatus.OK) {
+        var geocoder =  new google.maps.Geocoder();
+  geocoder.geocode( { 'address': city}, function(results, status) {
+    if (status == google.maps.GeocoderStatus.OK) {
 //      alert("location : " + results[0].geometry.location.lat() + " " +results[0].geometry.location.lng());
-     myLat = results[0].geometry.location.lat();
-     myLng = results[0].geometry.location.lng();
-     myLatlng1 = new google.maps.LatLng(myLat, myLng);
-     makeMap();
-   } else {
-     alert("Sorry! That is not a recognized city.");
-   }
- });
+      myLat = results[0].geometry.location.lat();
+      myLng = results[0].geometry.location.lng();
+      myLatlng1 = new google.maps.LatLng(myLat, myLng);
+      makeMap();
+    } else {
+      alert("Sorry! That is not a recognized city.");
+    }
+  });
 
 function makeMap(){
-       map = new google.maps.Map(document.getElementById('map'), {
-         center: {lat: myLat, lng: myLng},
-         zoom: 15
-       });
-       infowindow = new google.maps.InfoWindow();
-       var service = new google.maps.places.PlacesService(map);
-       service.nearbySearch({
-         location: {lat: myLat, lng: myLng},
-         radius: 6000,
-         keyword: "(community)"
-       }, callback);
-       service.nearbySearch({
-         location: {lat: myLat, lng: myLng},
-         radius: 6000,
-         keyword: "(theater OR amusement)"
-       }, callback2);
-       service.nearbySearch({
-         location: {lat: myLat, lng: myLng},
-         radius: 6000,
-         keyword: "(mental-health)"
-       }, callback3);
-     }
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: myLat, lng: myLng},
+          zoom: zoomzoom
+        });
+        infowindow = new google.maps.InfoWindow();
+        var service = new google.maps.places.PlacesService(map);
+        service.nearbySearch({
+          location: {lat: myLat, lng: myLng},
+          radius: 6000,
+          keyword: "(community)"
+        }, callback);
+        service.nearbySearch({
+          location: {lat: myLat, lng: myLng},
+          radius: 6000,
+          keyword: "(theater OR amusement)"
+        }, callback2);
+        service.nearbySearch({
+          location: {lat: myLat, lng: myLng},
+          radius: 6000,
+          keyword: "(mental-health)"
+        }, callback3);
+      }
 }
 
-     function callback(results, status) {
-       if (status === google.maps.places.PlacesServiceStatus.OK) {
-         for (var i = 0; i < results.length; i++) {
-           createMarker(results[i]);
-         }
-       }
-     }
+      function callback(results, status) {
+        if (status === google.maps.places.PlacesServiceStatus.OK) {
+          for (var i = 0; i < results.length; i++) {
+            createMarker(results[i]);
+          }
+        }
+      }
 
-     function callback2(results, status) {
-       if (status === google.maps.places.PlacesServiceStatus.OK) {
-         for (var i = 0; i < results.length; i++) {
-           createMarker2(results[i]);
-         }
-       }
-     }
+      function callback2(results, status) {
+        if (status === google.maps.places.PlacesServiceStatus.OK) {
+          for (var i = 0; i < results.length; i++) {
+            createMarker2(results[i]);
+          }
+        }
+      }
 
-     function callback3(results, status) {
-       if (status === google.maps.places.PlacesServiceStatus.OK) {
-         for (var i = 0; i < results.length; i++) {
-           createMarker3(results[i]);
-         }
-       }
-     }
+      function callback3(results, status) {
+        if (status === google.maps.places.PlacesServiceStatus.OK) {
+          for (var i = 0; i < results.length; i++) {
+            createMarker3(results[i]);
+          }
+        }
+      }
 
-     function createMarker(place) {
-       var placeLoc = place.geometry.location;
-       var link;
-       var marker = new google.maps.Marker({
-         map: map,
-         position: place.geometry.location,
-         icon: 'https://github.com/daryakaviani/my-first-blog/blob/master/community-image.png?raw=true'
-       });
+      function createMarker(place) {
+        var placeLoc = place.geometry.location;
+        var link;
+        var marker = new google.maps.Marker({
+          map: map,
+          position: place.geometry.location,
+          icon: 'https://github.com/daryakaviani/my-first-blog/blob/master/community-image.png?raw=true'
+        });
 
-       google.maps.event.addListener(marker, 'click', function() {
-         infowindow.setContent(place.name);
-         infowindow.open(map, this);
-       });
-     }
+        google.maps.event.addListener(marker, 'click', function() {
+          infowindow.setContent(place.name);
+          infowindow.open(map, this);
+        });
+      }
 
-     function createMarker2(place) {
-       var placeLoc = place.geometry.location;
-       var link;
-       var marker = new google.maps.Marker({
-         map: map,
-         position: place.geometry.location,
-         icon: 'https://github.com/daryakaviani/my-first-blog/blob/master/rsz_1150179746068554.png?raw=true'
+      function createMarker2(place) {
+        var placeLoc = place.geometry.location;
+        var link;
+        var marker = new google.maps.Marker({
+          map: map,
+          position: place.geometry.location,
+          icon: 'https://github.com/daryakaviani/my-first-blog/blob/master/rsz_1150179746068554.png?raw=true'
 
-       });
+        });
 
-       google.maps.event.addListener(marker, 'click', function() {
-         infowindow.setContent(place.name);
-         infowindow.open(map, this);
-       });
-     }
+        google.maps.event.addListener(marker, 'click', function() {
+          infowindow.setContent(place.name);
+          infowindow.open(map, this);
+        });
+      }
 
-     function createMarker3(place) {
-       var placeLoc = place.geometry.location;
-       var link;
-       var marker = new google.maps.Marker({
-         map: map,
-         position: place.geometry.location,
-         icon: 'https://raw.githubusercontent.com/daryakaviani/my-first-blog/master/mental-health-image.png'
-       });
+      function createMarker3(place) {
+        var placeLoc = place.geometry.location;
+        var link;
+        var marker = new google.maps.Marker({
+          map: map,
+          position: place.geometry.location,
+          icon: 'https://raw.githubusercontent.com/daryakaviani/my-first-blog/master/mental-health-image.png'
+        });
 
-       google.maps.event.addListener(marker, 'click', function() {
-         infowindow.setContent(place.name);
-         infowindow.open(map, this);
-       });
-     }
-     function keyPressed(e){
-       if (e.keyCode == 13) {
-       var tb = document.getElementById("search-box");
-       return tb.value;
-   }
-     }
+        google.maps.event.addListener(marker, 'click', function() {
+          infowindow.setContent(place.name);
+          infowindow.open(map, this);
+        });
+      }
    </script>
 </html>

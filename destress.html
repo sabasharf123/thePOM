@@ -21,133 +21,39 @@ p {line-height: 2}
     background-size: cover;
     }
 
-    /* The Modal (background) */
-    .modal {
-        display: none; /* Hidden by default */
-        position: fixed; /* Stay in place */
-        z-index: 1; /* Sit on top */
-        padding-top: 100px; /* Location of the box */
-        left: 0;
-        top: 0;
-        width: 100%; /* Full width */
-        height: 100%; /* Full height */
-        overflow: auto; /* Enable scroll if needed */
-        background-color: rgb(0,0,0); /* Fallback color */
-        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-    }
-
-    /* Modal Content */
-    .modal-content {
-        background-color: #fefefe;
-        margin: auto;
-        padding: 20px;
-        border: 1px solid #888;
-        width: 80%;
-    }
-
-    /* The Close Button */
-    .close {
-        color: #aaaaaa;
-        float: right;
-        font-size: 28px;
-        font-weight: bold;
-    }
-
-    .close:hover,
-    .close:focus {
-        color: #000;
-        text-decoration: none;
-        cursor: pointer;
-    }
-
-    .modal2 {
-        display: none; /* Hidden by default */
-        position: fixed; /* Stay in place */
-        z-index: 1; /* Sit on top */
-        padding-top: 100px; /* Location of the box */
-        left: 0;
-        top: 0;
-        width: 100%; /* Full width */
-        height: 100%; /* Full height */
-        overflow: auto; /* Enable scroll if needed */
-        background-color: rgb(0,0,0); /* Fallback color */
-        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-    }
-
-    /* Modal Content */
-    .modal-content2 {
-        background-color: #fefefe;
-        margin: auto;
-        padding: 20px;
-        border: 1px solid #888;
-        width: 80%;
-    }
-
-    /* The Close Button */
-    .close2 {
-        color: #aaaaaa;
-        float: right;
-        font-size: 28px;
-        font-weight: bold;
-    }
-
-    .close2:hover,
-    .close2:focus {
-        color: #000;
-        text-decoration: none;
-        cursor: pointer;
-    }
-
-    .modal3 {
-        display: none; /* Hidden by default */
-        position: fixed; /* Stay in place */
-        z-index: 1; /* Sit on top */
-        padding-top: 100px; /* Location of the box */
-        left: 0;
-        top: 0;
-        width: 100%; /* Full width */
-        height: 100%; /* Full height */
-        overflow: auto; /* Enable scroll if needed */
-        background-color: rgb(0,0,0); /* Fallback color */
-        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-    }
-
-    /* Modal Content */
-    .modal-content3 {
-        background-color: #fefefe;
-        margin: auto;
-        padding: 20px;
-        border: 1px solid #888;
-        width: 80%;
-    }
-
-    /* The Close Button */
-    .close3 {
-        color: #aaaaaa;
-        float: right;
-        font-size: 28px;
-        font-weight: bold;
-    }
-
-    .close3:hover,
-    .close3:focus {
-        color: #000;
-        text-decoration: none;
-        cursor: pointer;
-    }
-
     .button {
-      background-repeat:no-repeat;
-      border: none;
-      cursor:pointer;
-      overflow: hidden;
-      outline:none;
-  }
+      display: inline-block;
+      text-align: center;
+      vertical-align: middle;
+      padding: 9px 12px;
+      border: 1px solid #8d6cb2;
+      border-radius: 55px;
+      background: #ecbfff;
+      background: -webkit-gradient(linear, left top, left bottom, from(#ecbfff), to(#b297d1));
+      background: -moz-linear-gradient(top, #ecbfff, #b297d1);
+      background: linear-gradient(to bottom, #ecbfff, #b297d1);
+      text-shadow: #654d7f 1px 1px 1px;
+      font: normal normal bold 20px trebuchet ms;
+      color: #ffffff;
+      text-decoration: none;
+    }
+    .button:hover,
+    .button:focus {
+      border: 1px solid ##c99afe;
+      background: #ffe5ff;
+      background: -webkit-gradient(linear, left top, left bottom, from(#ffe5ff), to(#d6b5fb));
+      background: -moz-linear-gradient(top, #ffe5ff, #d6b5fb);
+      background: linear-gradient(to bottom, #ffe5ff, #d6b5fb);
+      color: #ffffff;
+      text-decoration: none;
+    }
+    .button:active {
+      background: #8e7399;
+      background: -webkit-gradient(linear, left top, left bottom, from(#8e7399), to(#b297d1));
+      background: -moz-linear-gradient(top, #8e7399, #b297d1);
+      background: linear-gradient(to bottom, #8e7399, #b297d1);
+    }
 
-  .nicepicture {
-    border-style: solid;
-    border-color: transparent;
-}
   </style>
 
 <body>
@@ -183,8 +89,8 @@ p {line-height: 2}
   </div>
 
   <div class="w3-display-bottommiddle w3-center w3-padding-large">
-    <div class="w3-container w3-center w3-animate-left">
-    <span class="w3-text-white" style="font-size:20px">“Don’t underestimate the value of doing nothing, of just going along, listening to all the things you can’t hear, and not bothering.”
+    <div class="w3-container w3-center w3-animate-zoom">
+    <span class="w3-text-black" style="font-size:20px">“Don’t underestimate the value of doing nothing, of just going along, listening to all the things you can’t hear, and not bothering.”
 -Winnie the Pooh</span>
   <p></p>
   </div>
@@ -196,85 +102,137 @@ p {line-height: 2}
 </div>
 </div>
 
-<!-- theMEMERY -->
-<div class="w3-container w3-padding-64 w3-pale-red w3-grayscale-min w3-center">
-  <div class="w3-content">
-    <h1 class="w3-text-grey"><b>theMEMERY</b></h1>
-    <p><i>You all know us. And we all know you. We are getting married lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
-      occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-      laboris nisi ut aliquip ex ea commodo consequat.</i>
-  </div>
-</div>
+
+
 
 <!--thePEACE-->
-<div class="w3-container w3-padding-64 w3-pale-red w3-grayscale-min w3-center">
+<div class="w3-container w3-padding-64 w3-pale-red w3-center">
   <div class="w3-content">
     <h1 class="w3-text-grey"><b>thePEACE</b></h1>
       <div class="w3-center">
-      <button id="myBtn"><img class="nicepic" src="aromatherapy.png" ></button>    <!-- Trigger/Open The Modal -->
-      <div id="myModal" class="modal">        <!-- The Modal -->
-        <div class="w3-center modal-content">               <!-- Modal content -->
-          <span class="close">&times;</span>
-            <p>Aromatherapy is the practice of using the natural oils extracted from flowers, bark, stems, leaves, roots or other parts of a plant to enhance psychological and physical well-being.
-The inhaled aroma from these "essential" oils is widely believed to stimulate brain function. Essential oils can also be absorbed through the skin, where they travel through the bloodstream and can promote whole-body healing.</p>
+
+          <img id="myImg" src="aromatherapy.png" width="600" height="400">
+                      <div class="w3-container">
+                        <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-pink">Aromatherapy</button>
+                        <div id="id01" class="w3-modal">
+                          <div class="w3-modal-content">
+                            <div class="w3-container">
+                              <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                              <iframe src="http://my.visme.co/embed/w4yypqwr-thepeace" height="1520" width="800" style="border: 0px;" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+
+                      <script>
+                      var myImg1 = document.getElementById('myImg');
+                      myImg1.onclick = function(){
+                          modal.style.display = "block";
+                          console.log("aroma");
+                          //modalImg.src = this.src;
+                          //captionText.innerHTML = this.alt;
+                      }
+                      // Get the <span> element that closes the modal
+                      var span = document.getElementsByClassName("close")[0];
+                      // When the user clicks on <span> (x), close the modal
+                      span.onclick = function() {
+                          modal.style.display = "none";
+                      }
+                      </script>
+
+
+
+        <img id="myImg2" src="meditation.png" width="600" height="400">
+              <div class="w3-container">
+              <button onclick="document.getElementById('id02').style.display='block'" class="w3-button w3-pink">Meditation</button>
+              <div id="id02" class="w3-modal">
+              <div class="w3-modal-content">
+                  <div class="w3-container">
+                    <span onclick="document.getElementById('id02').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                    <iframe src="http://my.visme.co/embed/g7mm0np6-thepeace2" height="1520" width="800" style="border: 0px;" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>         
+     </div>
+            </div>
+          </div>
         </div>
-      </div>
 
-    <script>
-     var modal = document.getElementById('myModal');  // Get the modal
-      var btn = document.getElementById("myBtn");       // Get the button that opens the modal
-      var span = document.getElementsByClassName("close")[0];   // Get the <span> element that closes the modal
-      btn.onclick = function() {                          // When the user clicks the button, open the modal
-          modal.style.display = "block";
-      }
-      span.onclick = function() {
-          modal.style.display = "none";             // When the user clicks on <span> (x), close the modal
+        <script>
+        var myImg2 = document.getElementById('myImg2');
+        myImg1.onclick = function(){
+            modal.style.display = "block";
+            console.log("meditation");
+            //modalImg.src = this.src;
+            //captionText.innerHTML = this.alt;
+        }
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+        </script>
 
-      }
-    </script>
+  <img id="myImg3" src="yoga.png" width="600" height="400">
+    <div class="w3-container">
+      <button onclick="document.getElementById('id03').style.display='block'" class="w3-button w3-pink">Yoga</button>
+      <div id="id03" class="w3-modal">
+        <div class="w3-modal-content">
+          <div class="w3-container">
+        <span onclick="document.getElementById('id03').style.display='none'" class="w3-button w3-display-topright">&times;</span>
 
-    <button  id="myBtn2"><img class="nicepic" src="meditation.png"></button>    <!-- Trigger/Open The Modal -->
-      <div id="myModal2" class="modal2">        <!-- The Modal -->
-        <div class="w3-center modal-content2">               <!-- Modal content -->
-          <span class="close2">&times;</span>
-            <p>Aromatherapyipdeqwhnjferfdnklo</p>
-        </div>
-      </div>
-
-  <script>
-  var m = document.getElementById('myModal2');  // Get the modal
-  var b = document.getElementById("myBtn2");       // Get the button that opens the modal
-  var span = document.getElementsByClassName("close2")[0];   // Get the <span> element that closes the modal
-  b.onclick = function() {                          // When the user clicks the button, open the modal
-      m.style.display = "block";
-  }
-  span.onclick = function() {
-      m.style.display = "none";             // When the user clicks on <span> (x), close the modal
-
-  }
-  </script>
-
-  <button  id="myBtn3"><img class="nicepic" src="yoga.png"></button>    <!-- Trigger/Open The Modal -->
-    <div id="myModal3" class="modal3">        <!-- The Modal -->
-      <div class="w3-center modal-content3">               <!-- Modal content -->
-        <span class="close3">&times;</span>
-          <p>fuck</p>
-      </div>
-    </div>
+  </div>
+</div>
+</div>
+</div>
 
 <script>
-    var m3 = document.getElementById('myModal3');  // Get the modal
-    var b3 = document.getElementById("myBtn3");       // Get the button that opens the modal
-    var span = document.getElementsByClassName("close3")[0];   // Get the <span> element that closes the modal
-    b3.onclick = function() {                          // When the user clicks the button, open the modal
-        m3.style.display = "block";
-    }
-    span.onclick = function() {
-        m3.style.display = "none";             // When the user clicks on <span> (x), close the modal
-
-    }
+var myImg2 = document.getElementById('myImg3');
+myImg1.onclick = function(){
+modal.style.display = "block";
+console.log("yoga");
+//modalImg.src = this.src;
+//captionText.innerHTML = this.alt;
+}
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+modal.style.display = "none";
+}
 </script>
 
+
+<!-- theMEMERY -->
+
+
+
+<div class="w3-container w3-padding-64 w3-pale-red  w3-center">
+  <div class="w3-content">
+    <h1 class="w3-text-grey"></h1>
+    <input type="image" src="memery.jpg" height="600" href= href="#" onclick="random_imglink()">
+    <p></p>
+    <img id="memespot">
+  </div>
+</div>
+
+
+<script> //for meme generator~
+
+  function random_imglink(){
+    var myimages=new Array();
+    myimages[0]="image1.jpg";
+    myimages[1]="image2.jpg";
+    myimages[2]="image3.jpg";
+    myimages[3]="image4.jpg";
+    myimages[4]="image5.jpg";
+    myimages[5]="image6.jpg";
+
+    var ry=Math.floor(Math.random()*myimages.length);
+    document.getElementById('memespot').src = myimages[ry];
+    //document.write('<img src="'+myimages[ry]+'" border=0>');
+}
+
+</script>
 
 
 <!-- theMusic -->
@@ -283,7 +241,7 @@ The inhaled aroma from these "essential" oils is widely believed to stimulate br
     <h1 class="w3-text-grey"><b>theMusic</b></h1>
     <p>Good music for good times</p>
     <div class="w3-row">
-        <iframe src="https://open.spotify.com/embed/user/12183611278/playlist/60LkEx71Mm62OBegwOBuTh" width="1000" height="380" frameborder="0" allowtransparency="true"></iframe>”
+        <iframe src="https://open.spotify.com/embed/user/12183611278/playlist/60LkEx71Mm62OBegwOBuTh" width="1000" height="380" frameborder="0" allowtransparency="true"></iframe>
       <!--  <p>Interactive map</p>
         <p>Statistics</p>
         <p>Advice</p>-->
@@ -293,10 +251,6 @@ The inhaled aroma from these "essential" oils is widely believed to stimulate br
 </div>
 
 <!-- RSVP section -->
-
-
-
-
 
 
 
